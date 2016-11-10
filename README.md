@@ -9,7 +9,7 @@ In my line of work I often have to use archaic MSAccess databases. So here is my
 - Install mdbtools $`brew install mdbtools`
 
 ##### For MYSQL
-- Extract MSAccess DB $`MDB_JET3_CHARSET="cp1255" python access_dump.py database.mdb kern > database.sql`
+- Extract MSAccess DB $`MDB_JET3_CHARSET="cp1255" python access_dump.py database.mdb database_name > database.sql`
 - Import sql $`mysql -uroot -proot database < database.sql`
 
 
